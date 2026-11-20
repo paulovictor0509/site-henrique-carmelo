@@ -3,10 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="assets/logo-hc.svg">
-<title>Henrique Carmelo</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Henrique Carmelo, médico. Consultas on-line com tempo, escuta e ciência.">
+<link rel="icon" href="/assets/logo-hc.svg">
+<title>Dr. Henrique Carmelo | Teleconsulta médica e informações sobre saúde</title>
+<meta name="description" content="Conheça o Dr. Henrique Carmelo. Teleconsultas médicas on-line e conteúdos acessíveis sobre saúde, sistema endocanabinoide e pesquisas com canabinoides.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.drhenriquecarmelo.com.br/">
+<meta name="author" content="Henrique Carmelo Dias">
+<meta name="theme-color" content="#0B1B33">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dr. Henrique Carmelo">
+<meta property="og:title" content="Dr. Henrique Carmelo | Teleconsulta médica e informações sobre saúde">
+<meta property="og:description" content="Conheça o Dr. Henrique Carmelo. Teleconsultas médicas on-line e conteúdos acessíveis sobre saúde, sistema endocanabinoide e pesquisas com canabinoides.">
+<meta property="og:url" content="https://www.drhenriquecarmelo.com.br/">
+<meta property="og:image" content="https://www.drhenriquecarmelo.com.br/assets/og/home.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Dr. Henrique Carmelo, médico, de jaleco">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://www.drhenriquecarmelo.com.br/#henrique", "name": "Henrique Carmelo Dias", "alternateName": "Dr. Henrique Carmelo", "jobTitle": "Médico", "description": "Médico (CRM-SP 239996) com atuação na atenção primária. Realiza consultas médicas on-line, por vídeo.", "url": "https://www.drhenriquecarmelo.com.br/", "image": "https://www.drhenriquecarmelo.com.br/assets/og/home.jpg", "sameAs": ["https://www.instagram.com/drhenriquecarmelo/"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidade de Franca (UNIFRAN)"}, "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "Registro profissional", "name": "CRM-SP 239996", "recognizedBy": {"@type": "Organization", "name": "Conselho Regional de Medicina do Estado de São Paulo"}}}, {"@type": "WebSite", "@id": "https://www.drhenriquecarmelo.com.br/#website", "url": "https://www.drhenriquecarmelo.com.br/", "name": "Dr. Henrique Carmelo", "inLanguage": "pt-BR", "publisher": {"@id": "https://www.drhenriquecarmelo.com.br/#henrique"}}]}</script>
+<script>try{if(sessionStorage.getItem("hc-intro"))document.documentElement.classList.add("skip-intro");sessionStorage.setItem("hc-intro","1")}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap">
@@ -45,7 +63,7 @@ img{display:block;max-width:100%}
 p{margin:0}
 h1,h2,h3{font-family:var(--f-display);font-weight:500;margin:0;text-wrap:balance;letter-spacing:-.01em}
 h2{font-size:clamp(38px,5.6vw,72px);line-height:1.02}
-h2 em,h1 em{font-style:italic;font-weight:400}
+h2 em,h1 em,.h1 em{font-style:italic;font-weight:400}
 .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
 .eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 12px/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink)}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
@@ -75,6 +93,19 @@ h2 em,h1 em{font-style:italic;font-weight:400}
 .brand{transition:opacity .25s ease}
 @keyframes introOut{to{transform:translateY(-100%);visibility:hidden}}
 @media (prefers-reduced-motion:reduce){.intro{display:none}}
+.skip-intro .intro{display:none}
+.skip-intro.js .hero .h1 .ln > span{animation-delay:.1s!important}
+.skip-intro.js .hero .fade{animation-delay:.5s!important}
+.skip-intro .brand{opacity:1!important}
+.legal{background:var(--ivory);padding:150px 0 90px}
+.legal .col{max-width:760px;display:flex;flex-direction:column;gap:18px}
+.legal h1,.legal h2{color:var(--navy);font-size:clamp(38px,5.6vw,72px);line-height:1.02}
+.legal h3{font-size:clamp(24px,2.6vw,30px);color:var(--navy);margin-top:18px}
+.legal p,.legal li{font-size:17px;line-height:1.7;color:#3d4a5c}
+.legal ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+.legal .upd{font-size:14px;color:var(--slate)}
+footer .flinks{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer .flinks a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- botões ---------- */
 .btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:17px 28px;border-radius:999px;font:600 15px/1 var(--f-body);letter-spacing:.01em;text-decoration:none;border:1px solid transparent;cursor:pointer;overflow:hidden;isolation:isolate;transition:color .35s ease,border-color .35s ease}
@@ -114,10 +145,10 @@ h2 em,h1 em{font-style:italic;font-weight:400}
 .hero::before{content:"";position:absolute;inset:auto -10% -30% 30%;height:90%;background:radial-gradient(closest-side,rgba(24,61,158,.55),rgba(24,61,158,0));pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end;min-height:min(820px,calc(100svh - 60px))}
 .hero-text{min-width:0;display:flex;flex-direction:column;gap:30px;padding-bottom:clamp(56px,8vw,110px)}
-.hero h1{font-size:clamp(42px,6vw,84px);line-height:.98;letter-spacing:-.02em}
-.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
-.hero h1 .ln > span{display:inline-block}
-.hero h1 em{color:var(--gold)}
+.hero .h1{font-size:clamp(42px,6vw,84px);line-height:.98;letter-spacing:-.02em}
+.hero .h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero .h1 .ln > span{display:inline-block}
+.hero .h1 em{color:var(--gold)}
 .hero .lead{font-size:clamp(17px,1.5vw,19px);color:rgba(247,243,234,.74);max-width:31em}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:6px 0 0;padding-top:24px;border-top:1px solid var(--line-d);max-width:600px}
@@ -304,8 +335,8 @@ h2 em,h1 em{font-style:italic;font-weight:400}
 /* ---------- blog ---------- */
 .blog-head{padding-top:calc(env(safe-area-inset-top,0px) + 130px)}
 .blog-head .wrap{padding-block:0 clamp(56px,7vw,90px);display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:end}
-.blog-head h1{font-size:clamp(52px,8vw,108px);line-height:.95;letter-spacing:-.02em}
-.blog-head h1 em{color:var(--gold)}
+.blog-head .h1{font-size:clamp(52px,8vw,108px);line-height:.95;letter-spacing:-.02em}
+.blog-head .h1 em{color:var(--gold)}
 .blog-head p{color:rgba(247,243,234,.72);max-width:30em}
 @media (max-width:900px){.blog-head .wrap{grid-template-columns:1fr}}
 .blog-list .wrap{padding-block:clamp(48px,7vw,90px) clamp(80px,10vw,130px);display:flex;flex-direction:column;gap:32px}
@@ -517,10 +548,10 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
 @media (prefers-reduced-motion:no-preference){
   .js .rv{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
   .js .rv.in{opacity:1;transform:none}
-  .js .hero h1 .ln > span{transform:translateY(105%);animation:lineUp 1.1s cubic-bezier(.2,.7,.2,1) forwards}
-  .js .hero h1 .ln:nth-child(2) > span{animation-delay:3.05s}
-  .js .hero h1 .ln:nth-child(1) > span{animation-delay:2.95s}
-  .js .hero h1 .ln:nth-child(3) > span{animation-delay:3.15s}
+  .js .hero .h1 .ln > span{transform:translateY(105%);animation:lineUp 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+  .js .hero .h1 .ln:nth-child(2) > span{animation-delay:3.05s}
+  .js .hero .h1 .ln:nth-child(1) > span{animation-delay:2.95s}
+  .js .hero .h1 .ln:nth-child(3) > span{animation-delay:3.15s}
   .js .hero .fade{opacity:0;animation:fadeUp 1s cubic-bezier(.2,.7,.2,1) 3.35s forwards}
   .js .hero-art{opacity:0;transform:translateY(40px);animation:fadeUp 1.4s cubic-bezier(.2,.7,.2,1) 2.85s forwards}
   @keyframes lineUp{to{transform:none}}
@@ -547,10 +578,10 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
       <a href="#inicio" data-nav="inicio">Início</a>
       <a href="#sobre" data-nav="sobre">Sobre</a>
       <a href="#consulta" data-nav="consulta">A consulta</a>
-      <a href="#conteudos" data-nav="conteudos">Conteúdos</a>
+      <a href="/blog/" data-nav="conteudos">Conteúdos</a>
       <a href="#duvidas" data-nav="duvidas">Dúvidas</a>
       <a href="#contato" data-nav="contato">Contato</a>
-      <a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span>Agendar</span></a>
+      <a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span>Agendar</span></a>
       <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menu"><span></span></button>
     </nav>
   </div>
@@ -561,12 +592,12 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
     <a href="#inicio" data-nav="inicio">Início</a>
     <a href="#sobre" data-nav="sobre">Sobre</a>
     <a href="#consulta" data-nav="consulta">A consulta</a>
-    <a href="#conteudos" data-nav="conteudos">Conteúdos <small>Blog</small></a>
+    <a href="/blog/" data-nav="conteudos">Conteúdos <small>Blog</small></a>
     <a href="#duvidas" data-nav="duvidas">Dúvidas</a>
     <a href="#contato" data-nav="contato">Contato</a>
   </nav>
   <div class="foot">
-    <a class="btn btn-gold js-wa" href="#contato"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar consulta</a>
+    <a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar teleconsulta</a>
     <p>Henrique Carmelo Dias · Médico · CRM-SP 239996</p>
   </div>
 </div>
@@ -577,16 +608,16 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
     <div class="wrap">
       <div class="hero-text">
         <span class="eyebrow fade">Médico · Consultas on-line</span>
-        <h1><span class="ln"><span>Uma boa consulta</span></span><span class="ln"><span>começa por uma</span></span><span class="ln"><span><em>conversa cuidadosa.</em></span></span></h1>
+        <h1 class="h1"><span class="ln"><span>Uma boa consulta</span></span><span class="ln"><span>começa por uma</span></span><span class="ln"><span><em>conversa cuidadosa.</em></span></span></h1>
         <p class="lead fade">Consultas on-line com tempo para ouvir e decisões apoiadas em ciência, para quem convive com sintomas persistentes e busca uma nova avaliação.</p>
         <div class="ctas fade">
-          <a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar consulta</a>
+          <a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar teleconsulta</a>
           <a class="btn btn-line" href="#consulta">Como é a consulta</a>
         </div>
         <dl class="facts fade"><div><dt>Desde 2022</dt><dd>na atenção primária</dd></div><div><dt>Preceptor</dt><dd>do internato médico</dd></div><div><dt>530 horas</dt><dd>de atualização complementar</dd></div></dl>
       </div>
       <div class="hero-art" aria-hidden="false">
-        <img src="assets/hero.webp" alt="Henrique Carmelo sorrindo, de jaleco e braços cruzados" width="1249" height="1300">
+        <img src="/assets/hero.webp" alt="Henrique Carmelo sorrindo, de jaleco e braços cruzados" width="1249" height="1300">
         <p class="credit">Henrique Carmelo, médico <span>CRM-SP 239996</span></p>
       </div>
     </div>
@@ -650,7 +681,7 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
     <div class="wrap">
       <div class="head rv">
         <div><span class="eyebrow">Conteúdos</span><h2 id="lat-t">Saúde explicada com calma</h2></div>
-        <a class="btn btn-ghost" href="#conteudos">Ver todos os textos</a>
+        <a class="btn btn-ghost" href="/blog/">Ver todos os textos</a>
       </div>
       <div class="grid" id="latestGrid"></div>
     </div>
@@ -663,7 +694,7 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
     <div class="wrap">
       <div class="portrait rv">
         <span class="ring r2"></span><span class="ring"></span><span class="disc"></span>
-        <img class="round" src="assets/head.webp" alt="Retrato de Henrique Carmelo sorrindo" width="1000" height="1000">
+        <img class="round" src="/assets/head.webp" loading="lazy" decoding="async" alt="Retrato de Henrique Carmelo sorrindo" width="1000" height="1000">
         <span class="chip">CRM-SP 239996</span>
       </div>
       <div class="about-text rv">
@@ -694,7 +725,7 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
           <li class="rv"><span class="yr">2025 – hoje</span><div><h3>Pós-Graduação em Medicina de Família e Comunidade pela UFAL</h3><p>Especialização da Universidade Federal de Alagoas, oferecida dentro do Programa Mais Médicos, do Ministério da Saúde, com conclusão prevista para 2027. Aprofunda o cuidado integral e contínuo da pessoa e da família: abordagem centrada no paciente, manejo de condições crônicas, uso racional de medicamentos e coordenação do cuidado com outros serviços.</p></div></li>
           <li class="rv"><span class="yr">2023 – hoje</span><div><h3>Preceptor do Internato Médico</h3><p>Em um hospital de ensino no interior de São Paulo, orienta estudantes de Medicina no último ciclo da graduação, na atenção primária. A preceptoria exige atualização constante e o hábito de explicar cada raciocínio clínico com clareza, algo que ele leva para as próprias consultas.</p></div></li>
           <li class="rv"><span class="yr">2022 – hoje</span><div><h3>Médico na Estratégia Saúde da Família (SUS)</h3><p>Atua na atenção primária do Sistema Único de Saúde, primeiro como servidor público e, desde 2025, pelo Programa Mais Médicos. Acompanha famílias inteiras, da criança à pessoa idosa, com queixas do dia a dia, condições crônicas e pessoas que usam vários medicamentos ao mesmo tempo.</p></div></li>
-          <li class="rv book"><span class="yr">2022</span><div class="book-body"><span class="lg cover" data-logo="livro"><img src="assets/logos/livro.webp" alt="Livro"></span><div><h3>Autor de Capítulo Científico sobre a COVID-19</h3><p>Autor principal do capítulo 1, “Efeitos da COVID-19: sequelas fisiopatológicas”, do livro <i>COVID-19: uma visão além do óbvio</i> (Editora Science, 2022), obra revisada por pares e de acesso aberto. Também é coautor de um artigo no <i>Brazilian Journal of Development</i> que revisou as evidências sobre o uso do leite materno no cuidado da pele do recém-nascido.</p><a class="lattes" href="https://doi.org/10.56001/22.9786500445497" target="_blank" rel="noopener">Ler o livro <span aria-hidden="true">↗</span></a></div></div></li>
+          <li class="rv book"><span class="yr">2022</span><div class="book-body"><span class="lg cover" data-logo="livro"><img src="/assets/logos/livro.webp" alt="Livro"></span><div><h3>Autor de Capítulo Científico sobre a COVID-19</h3><p>Autor principal do capítulo 1, “Efeitos da COVID-19: sequelas fisiopatológicas”, do livro <i>COVID-19: uma visão além do óbvio</i> (Editora Science, 2022), obra revisada por pares e de acesso aberto. Também é coautor de um artigo no <i>Brazilian Journal of Development</i> que revisou as evidências sobre o uso do leite materno no cuidado da pele do recém-nascido.</p><a class="lattes" href="https://doi.org/10.56001/22.9786500445497" target="_blank" rel="noopener">Ler o livro <span aria-hidden="true">↗</span></a></div></div></li>
           <li class="rv"><span class="yr">2017 – 2022</span><div><h3>Graduação em Medicina pela UNIFRAN</h3><p>Formado pela Universidade de Franca, cujo curso de Medicina recebeu conceito 5, a nota máxima, no Conceito Preliminar de Curso (CPC) do MEC/Inep divulgado em 2020. Durante a graduação, foi vice-presidente da Liga Acadêmica de Cirurgia Pediátrica e participou de congressos e jornadas acadêmicas nas áreas de pediatria, saúde mental e emergência.</p></div></li>
         </ol>
         <div class="study rv">
@@ -720,8 +751,8 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
       <div class="rail" id="rail">
         <article class="step"><span class="n">01</span><h3>Sua história</h3><span class="rule"></span><p>Conhecer sua história, suas queixas e seus objetivos, com tempo para ouvir.</p></article>
         <article class="step"><span class="n">02</span><h3>Revisão</h3><span class="rule"></span><p>Revisar tratamentos, medicamentos, exames e riscos pertinentes ao seu caso.</p></article>
-        <article class="step"><span class="n">03</span><h3>Hipóteses e evidências</h3><span class="rule"></span><p>Discutir hipóteses, alternativas e o papel das evidências científicas disponíveis.</p></article>
-        <article class="step"><span class="n">04</span><h3>Conduta individual</h3><span class="rule"></span><p>Definir a conduta em conjunto, de forma individual, explicando benefícios e riscos de cada opção.</p></article>
+        <article class="step"><span class="n">03</span><h3>Entendendo o que pode estar acontecendo</h3><span class="rule"></span><p>Conversar sobre as possíveis causas, os cuidados disponíveis e o que os estudos mostram sobre cada opção.</p></article>
+        <article class="step"><span class="n">04</span><h3>Seu plano de cuidado</h3><span class="rule"></span><p>Definir os próximos passos considerando sua história, suas necessidades e a segurança de cada escolha.</p></article>
         <article class="step"><span class="n">05</span><h3>Acompanhamento</h3><span class="rule"></span><p>Planejar o acompanhamento e a reavaliação, conforme a necessidade de cada caso.</p></article>
         <article class="step end"><svg aria-hidden="true"><use href="#logo"/></svg><div style="display:flex;flex-direction:column;gap:12px"><h3>Informação antes de decisão.</h3><p>O objetivo é que você saia da consulta entendendo o que foi decidido e por quê.</p></div></article>
       </div>
@@ -738,7 +769,7 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
   </section>
 
   <section class="cine" aria-label="Recado do Henrique">
-    <img class="cine-img" src="assets/cine.webp" alt="Henrique Carmelo, de jaleco, com expressão serena" width="1200" height="1231">
+    <img class="cine-img" src="/assets/cine.webp" loading="lazy" decoding="async" alt="Henrique Carmelo, de jaleco, com expressão serena" width="1200" height="1231">
     <div class="wrap">
       <blockquote class="rv">
         <p>Antes de pensar no tratamento, eu preciso entender como os sintomas aparecem na sua vida.</p>
@@ -780,9 +811,9 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
         <details><summary>Preciso parar o tratamento que já faço?</summary><p>Não. Nenhuma medicação deve ser interrompida por conta própria. A consulta revisa o que você já usa e, se algum ajuste for necessário, ele é feito com segurança e explicado passo a passo. A consulta também pode complementar o acompanhamento com o seu médico atual.</p></details>
         <details><summary>Como funciona a consulta on-line?</summary><p>Depois de agendar, você recebe pelo WhatsApp o link da consulta e as orientações. No horário marcado, é só entrar pelo celular ou pelo computador, de um lugar reservado e com boa conexão. A teleconsulta é regulamentada pelo Conselho Federal de Medicina, depende do seu consentimento e segue as mesmas regras de sigilo e registro de uma consulta presencial. Em alguns casos, pode ser necessária avaliação presencial.</p></details>
         <details><summary>Recebo receita e pedido de exames pela consulta on-line?</summary><p>Sim, quando houver indicação. Receitas, pedidos de exame, atestados e relatórios são emitidos em formato digital, com assinatura eletrônica certificada, e enviados para você. Alguns medicamentos de controle especial seguem regras próprias de receituário, que são explicadas na consulta.</p></details>
-        <details><summary>E se o meu caso precisar de exame físico?</summary><p>Isso é avaliado durante a consulta. Se for necessário um exame presencial, você recebe a orientação sobre o melhor caminho para fazê-lo.</p></details>
+        <details><summary>E se o meu caso precisar de exame físico?</summary><p>Isso é avaliado durante a consulta. Se for necessário um exame presencial, você recebe a orientação sobre o melhor caminho para fazê-lo. No acompanhamento de doenças crônicas ou de condições que exigem seguimento prolongado, as normas do Conselho Federal de Medicina preveem também uma consulta presencial em intervalos de até 180 dias; quando isso se aplica ao seu caso, você é orientado sobre como fazê-la.</p></details>
         <details><summary>O que é bom ter em mãos durante a consulta?</summary><p>Exames recentes, receitas e a lista de tudo o que você usa, incluindo chás, suplementos e produtos naturais. Anotar quando os sintomas começaram e o que já foi tentado também ajuda muito.</p></details>
-        <details><summary>Como agendar e quais são os valores?</summary><p>Pelo WhatsApp. Lá você conhece os horários disponíveis e os valores.</p></details>
+        <details><summary>Como agendar e quais são os valores?</summary><p>Pelo WhatsApp. Lá você conhece os horários disponíveis e os valores. Na mensagem inicial não é preciso contar sintomas nem enviar exames: essas informações são tratadas na consulta.</p></details>
       </div>
     </div>
   </section>
@@ -791,15 +822,15 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
 </div>
 <div class="page page-contato" id="pg-contato" data-page="contato" hidden>
   <section class="final dark" id="contato" aria-labelledby="fin-t">
-    <img class="final-photo" src="assets/final.webp" alt="" aria-hidden="true">
+    <img class="final-photo" src="/assets/final.webp" loading="lazy" decoding="async" alt="" aria-hidden="true">
     <div class="ghost" data-par="-0.08" aria-hidden="true"><svg><use href="#logo"/></svg></div>
     <div class="wrap">
       <span class="eyebrow rv">Agendamento</span>
       <h2 id="fin-t" class="rv">Consultas on-line, <em>com hora marcada.</em></h2>
       <p class="rv fin-p">O agendamento é feito pelo WhatsApp. Você escolhe o melhor horário e recebe o link da consulta e as orientações.</p>
-      <div class="rv"><a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar consulta</a></div>
+      <div class="rv"><a class="btn btn-gold js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar teleconsulta</a></div>
       <div class="info rv">
-        <div><span><svg class="ic" aria-hidden="true"><use href="#wa"/></svg>WhatsApp</span><b><a class="js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener" id="waNumber">(16) 99211-5401</a></b></div>
+        <div><span><svg class="ic" aria-hidden="true"><use href="#wa"/></svg>WhatsApp</span><b><a class="js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener" id="waNumber">(16) 99211-5401</a></b></div>
         <div><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Instagram</span><b><a href="https://www.instagram.com/drhenriquecarmelo/" target="_blank" rel="noopener">@drhenriquecarmelo</a></b></div>
         <div><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Atendimento</span><b>Consultas on-line, por vídeo</b></div>
       </div>
@@ -808,13 +839,58 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
 
   <a class="next-page" href="#inicio"><span class="wrap"><span class="np-k">Próxima página</span><span class="np-t">Voltar ao início <i aria-hidden="true">→</i></span></span></a>
 </div>
+<div class="page page-privacidade" id="pg-privacidade" data-page="privacidade" hidden>
+  <section class="legal" id="privacidade" aria-labelledby="priv-t">
+    <div class="wrap"><div class="col">
+      <span class="eyebrow">Privacidade</span>
+      <h2 id="priv-t">Política de privacidade</h2>
+      <p class="upd">Atualizada em 20 de novembro de 2026.</p>
+      <p>Este site apresenta o trabalho do médico Henrique Carmelo Dias (CRM-SP 239996) e reúne textos informativos sobre saúde. Esta política explica, de forma simples, quais dados podem ser tratados quando você visita o site ou entra em contato, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+      <h3>Quem é o responsável</h3>
+      <p>O responsável pelo tratamento dos dados é Henrique Carmelo Dias, médico. Dúvidas e pedidos sobre seus dados podem ser feitos pelo WhatsApp do atendimento, informado na página de contato.</p>
+      <h3>O que o site não faz</h3>
+      <ul>
+        <li>Não tem formulários, cadastro ou área de login.</li>
+        <li>Não usa cookies de publicidade, pixels de anúncios nem ferramentas de remarketing.</li>
+        <li>Não pede, em nenhuma página, informações sobre sua saúde.</li>
+      </ul>
+      <h3>Serviços técnicos usados pelo site</h3>
+      <p>Para funcionar, o site depende de alguns serviços de terceiros. Ao carregar as páginas, o seu navegador se conecta a eles, e eles podem registrar dados técnicos de acesso, como endereço IP, data e hora, tipo de navegador e página visitada, de acordo com as políticas de cada um:</p>
+      <ul>
+        <li><b>GitHub Pages</b> (GitHub, Inc.): hospedagem do site.</li>
+        <li><b>Google Fonts</b> (Google): fontes tipográficas do site.</li>
+        <li><b>jsDelivr</b>: biblioteca que deixa a rolagem da página mais suave.</li>
+        <li><b>Unsplash</b>: algumas fotos que ilustram os textos do blog.</li>
+      </ul>
+      <p>O site guarda no seu navegador, apenas durante a visita, uma marcação técnica para não repetir a animação de abertura. Ela não identifica você e é apagada quando o navegador é fechado.</p>
+      <h3>Links externos e botões de compartilhar</h3>
+      <p>Os botões de WhatsApp, Instagram e de compartilhamento levam a serviços de outras empresas. Eles só são acionados se você clicar, e a partir daí valem os termos e as políticas de privacidade de cada serviço.</p>
+      <h3>Contato pelo WhatsApp</h3>
+      <p>O agendamento é feito pelo WhatsApp. A mensagem inicial sugerida pelo site não contém dados de saúde, e não é preciso enviar sintomas ou exames para agendar. As informações que você compartilhar são usadas para o agendamento e o atendimento médico, com sigilo profissional. Os dados da consulta ficam registrados em prontuário, guardado pelo prazo exigido pelas normas médicas.</p>
+      <h3>Seus direitos</h3>
+      <p>Você pode pedir a confirmação de que seus dados são tratados, o acesso a eles, a correção de dados incompletos ou desatualizados, informações sobre com quem foram compartilhados e, quando cabível, a eliminação, a anonimização ou a portabilidade, além de revogar consentimentos. Alguns dados, como os do prontuário médico, precisam ser mantidos por obrigação legal. Você também pode procurar a Autoridade Nacional de Proteção de Dados (ANPD).</p>
+      <h3>Mudanças nesta política</h3>
+      <p>Esta política pode ser atualizada quando o site mudar. A data da última atualização aparece no início da página.</p>
+    </div></div>
+  </section>
+</div>
+<div class="page page-nao-encontrada" id="pg-nao-encontrada" data-page="nao-encontrada" hidden>
+  <section class="legal" id="nao-encontrada" aria-labelledby="nf-t">
+    <div class="wrap"><div class="col">
+      <span class="eyebrow">Erro 404</span>
+      <h2 id="nf-t">Página não encontrada</h2>
+      <p>O endereço que você abriu não existe ou mudou de lugar. Você pode voltar ao início, ver os conteúdos ou falar com o atendimento pelo WhatsApp.</p>
+      <p style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-ghost" href="#inicio">Ir para o início</a><a class="btn btn-ghost" href="/blog/">Ver os conteúdos</a></p>
+    </div></div>
+  </section>
+</div>
 </main>
 
 <div id="blog" hidden>
   <div id="blogIndex">
     <section class="blog-head dark">
       <div class="wrap">
-        <div style="display:flex;flex-direction:column;gap:22px"><span class="eyebrow">Conteúdos</span><h1>Saúde explicada <em>com calma.</em></h1></div>
+        <div style="display:flex;flex-direction:column;gap:22px"><span class="eyebrow">Conteúdos</span><h2 class="h1">Saúde explicada <em>com calma.</em></h2></div>
         <p>Textos do Henrique sobre saúde, tratamentos e ciência, com linguagem simples e referências para quem quiser se aprofundar.</p>
       </div>
     </section>
@@ -834,243 +910,15 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
   <div class="wrap">
     <span><b>Henrique Carmelo</b> · Médico · CRM-SP 239996</span>
     <span>Conteúdo informativo. Não substitui a avaliação médica individual.</span>
-    <span class="priv">Privacidade: este site não usa cookies de rastreamento nem coleta dados. As informações enviadas pelo WhatsApp são usadas apenas para o agendamento e o atendimento, com sigilo médico e conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</span>
+    <span class="flinks"><a class="js-wa" href="https://wa.me/5516992115401?text=Ol%C3%A1!%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20o%20Dr.%20Henrique%20Carmelo." target="_blank" rel="noopener">Informações pelo WhatsApp</a><a href="https://www.instagram.com/drhenriquecarmelo/" target="_blank" rel="noopener">Instagram</a><a href="/politica-de-privacidade/">Política de privacidade</a></span>
+    <span class="priv">Privacidade: este site não usa cookies de publicidade nem formulários. Serviços técnicos de hospedagem e de fontes podem registrar dados básicos de acesso, como o endereço IP. As mensagens enviadas pelo WhatsApp são usadas para o agendamento e o atendimento, com sigilo médico e conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</span>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
-/* Textos do blog. Para publicar um novo texto, acrescente um item no início desta lista.
-   Textos com data futura ficam agendados e aparecem sozinhos no dia. */
+/* Textos PUBLICADOS do blog (aprovados). Rascunhos ficam fora do site, em drafts_privados.js. */
 const POSTS = [
-{
-  slug:"thcv-obesidade",
-  draft:true,
-  cat:"Ciência",
-  date:"2026-11-20",
-  cover:"thcv",
-  title:"O que já se sabe sobre o THCV no tratamento da obesidade?",
-  summary:"O THCV é um canabinoide pouco conhecido que, ao contrário do THC, parece não aumentar o apetite. Veja o que mostram os estudos, por que ainda é cedo para usá-lo e o que diz a regulamentação no Brasil.",
-  body:`
-<p>Quem já ouviu falar de cannabis provavelmente conhece a fama do THC de aumentar o apetite. Por isso chama a atenção que outra molécula da mesma planta, o <b>THCV</b> (tetra-hidrocanabivarina), venha sendo estudada justamente para o caminho oposto: controle de peso e de glicose.</p>
-<h2>O que é o THCV</h2>
-<p>O THCV é um canabinoide com estrutura muito parecida com a do THC. A diferença está em uma pequena cadeia de carbonos, mais curta. Essa mudança, que parece mínima, altera a forma como a molécula se encaixa no receptor CB1, o principal receptor canabinoide do cérebro. Em doses baixas, os estudos em laboratório mostram que o THCV se comporta como um <b>antagonista</b> do CB1: ele ocupa o receptor sem ativá-lo.</p>
-<div class="gloss">
-<div class="g"><i data-icon="receptor"></i><b>Receptor CB1</b><span>Uma "fechadura" na superfície das células. No hipotálamo, região do cérebro que regula a fome, ele participa do controle do apetite.</span></div>
-<div class="g"><i data-icon="key"></i><b>Agonista</b><span>Molécula que encaixa na fechadura e a "liga". O THC é um agonista do CB1.</span></div>
-<div class="g"><i data-icon="block"></i><b>Antagonista</b><span>Molécula que ocupa a fechadura sem ligá-la, impedindo que outras a ativem.</span></div>
-</div>
-<h2>Por que o receptor CB1 interessa no tratamento da obesidade</h2>
-<p>Quando o CB1 é ativado no hipotálamo e no tecido de gordura, o organismo tende a aumentar o apetite e a armazenar energia. A ideia de bloquear esse receptor para tratar a obesidade não é nova: nos anos 2000 chegou a ser vendido um medicamento com esse mecanismo, o <b>rimonabanto</b>. Ele reduzia o peso, mas foi retirado do mercado europeu em 2008 porque aumentava o risco de ansiedade, depressão e pensamentos suicidas.</p>
-<p>Essa história é importante para entender o interesse no THCV: em estudos com animais, ele parece reduzir o apetite e melhorar a sensibilidade à insulina com um perfil diferente do rimonabanto. Se isso se confirma em pessoas, ainda não se sabe.</p>
-<div class="scene" data-scene="thcv"></div>
-<h2>O que mostram os estudos</h2>
-<ul>
-<li><b>Em animais:</b> em camundongos obesos, o THCV melhorou a sensibilidade à insulina e a tolerância à glicose, e em alguns modelos reduziu a ingestão de alimentos.</li>
-<li><b>Em pessoas com diabetes tipo 2:</b> um estudo-piloto randomizado com 62 participantes, publicado em 2016 na revista <i>Diabetes Care</i>, mostrou que o THCV reduziu a glicemia de jejum e melhorou marcadores da função do pâncreas em 13 semanas. O peso, porém, não mudou de forma significativa.</li>
-<li><b>Em pessoas com obesidade:</b> um estudo publicado em 2025 testou fitas que dissolvem na boca com THCV e CBD por 90 dias em adultos com IMC acima de 30. Os grupos que usaram as fitas perderam em média de 2,6 a 4,1 kg, contra 0,1 kg no grupo placebo. O próprio autor aponta as limitações: grupos pequenos (10 pessoas no placebo), autor ligado à empresa que desenvolve o produto e resultados que ainda precisam ser confirmados por estudos maiores e independentes.</li>
-</ul>
-<h2>Já existe medicamento com THCV?</h2>
-<p>Não. Até o momento, nenhuma agência reguladora, incluindo a Anvisa, aprovou um medicamento com THCV para tratar obesidade ou diabetes. Os produtos que circulam no exterior são, em geral, suplementos ou produtos sem registro como medicamento, sem garantia de dose ou de pureza.</p>
-<p>No Brasil, os produtos de cannabis para uso medicinal seguem regras da Anvisa, que foram atualizadas em 2026 e incluem tanto produtos vendidos em farmácias quanto a importação por pessoa física com prescrição. Essas regras não autorizam o THCV como tratamento para obesidade e mudam com frequência. Por isso, qualquer dúvida sobre importação deve ser conferida diretamente nos canais oficiais da Anvisa, e nunca por indicação de vendedores ou de redes sociais.</p>
-<h2>O que isso significa para quem quer perder peso</h2>
-<p>O THCV é uma molécula promissora para a pesquisa, mas ainda não é um tratamento. A obesidade é uma doença crônica que já conta com tratamentos estudados em milhares de pessoas, incluindo mudanças de alimentação e atividade física, acompanhamento psicológico, medicamentos aprovados e, em casos selecionados, cirurgia. A escolha depende de cada pessoa e deve ser feita com acompanhamento médico.</p>
-<div class="note"><b>Importante:</b> não use produtos com THCV comprados pela internet. Além de não terem eficácia comprovada para emagrecer, muitos não informam corretamente a composição e podem conter THC.</div>`,
-  refs:[
-    "Abioye A, Ayodele O, Marinkovic A, Patidar R, Akinwekomi A, Sanyaolu A. Δ9-Tetrahydrocannabivarin (THCV): a commentary on potential therapeutic benefit for the management of obesity and diabetes. Journal of Cannabis Research. 2020;2:6.",
-    "Wargent ET, Zaibi MS, Silvestri C, et al. The cannabinoid Δ9-tetrahydrocannabivarin (THCV) ameliorates insulin sensitivity in two mouse models of obesity. Nutrition & Diabetes. 2013;3:e68.",
-    "Riedel G, Fadda P, McKillop-Smith S, Pertwee RG, Platt B, Robinson L. Synthetic and plant-derived cannabinoid receptor antagonists show hypophagic properties in fasted and non-fasted mice. British Journal of Pharmacology. 2009;156(7):1154-1166.",
-    "Jadoon KA, Ratcliffe SH, Barrett DA, et al. Efficacy and safety of cannabidiol and tetrahydrocannabivarin on glycemic and lipid parameters in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled, parallel group pilot study. Diabetes Care. 2016;39(10):1777-1786.",
-    "Smith GL. Weight loss and therapeutic metabolic effects of tetrahydrocannabivarin (THCV)-infused mucoadhesive strips. Cannabis. 2025;8(1):109-120. doi:10.26828/cannabis/2024/000206.",
-    "Christensen R, Kristensen PK, Bartels EM, Bliddal H, Astrup A. Efficacy and safety of the weight-loss drug rimonabant: a meta-analysis of randomised trials. The Lancet. 2007;370(9600):1706-1713.",
-    "Agência Nacional de Vigilância Sanitária (Anvisa). Anvisa aprova por unanimidade regras que cumprem decisão do STJ para produção de cannabis medicinal. Notícia publicada em 28 de janeiro de 2026."
-  ]
-},
-{
-  slug:"dermatologia-canabinoides",
-  draft:true,
-  cat:"Ciência",
-  date:"2026-11-18",
-  cover:"pele",
-  title:"O que há de novo na dermatologia? Canabinoides e a pele",
-  summary:"A pele tem o seu próprio sistema endocanabinoide, e os canabinoides tópicos vêm sendo estudados em cicatrização, inflamação e envelhecimento. Veja o que já é evidência, o que ainda é pesquisa e o que a Anvisa permite.",
-  body:`
-<p>Cremes, pomadas e óleos com canabidiol (CBD) ganharam espaço nas conversas sobre cuidados com a pele. Por trás do interesse existe uma base científica real: a pele tem o seu próprio <b>sistema endocanabinoide</b>. Mas existe também muito exagero. Este texto separa as duas coisas.</p>
-<h2>A pele também tem receptores canabinoides</h2>
-<p>Estudos com amostras de pele humana encontraram receptores CB1 e CB2 nas fibras nervosas sensitivas, nos folículos dos pelos, nas glândulas sebáceas e nas glândulas sudoríparas. Esse sistema participa do equilíbrio entre crescimento e renovação das células, da produção de oleosidade, da coceira e da inflamação.</p>
-<div class="gloss">
-<div class="g"><i data-icon="layers"></i><b>Epiderme</b><span>A camada mais externa da pele, que funciona como barreira. É onde a maior parte de um creme fica retida.</span></div>
-<div class="g"><i data-icon="cell"></i><b>Sebócito</b><span>Célula da glândula sebácea, que produz a oleosidade natural da pele.</span></div>
-<div class="g"><i data-icon="drop"></i><b>Glândula sudorípara</b><span>Glândula que produz o suor. Tem receptores canabinoides, mas a função deles ainda não está clara.</span></div>
-</div>
-<div class="scene" data-scene="pele"></div>
-<h2>Feridas e cicatrização</h2>
-<p>Em laboratório e em animais, canabinoides reduzem a inflamação e influenciam as células que participam da cicatrização. Em pessoas, os dados ainda são iniciais: há relatos de casos, como três pacientes com pioderma gangrenoso (um tipo de ferida difícil de tratar) que tiveram menos dor com óleo de cannabis aplicado na pele, e um estudo pequeno, sem grupo de comparação, em que uma pomada com CBD melhorou a aparência de cicatrizes e lesões inflamatórias. São sinais interessantes, mas insuficientes para recomendar o uso de rotina.</p>
-<h2>Oleosidade e acne</h2>
-<p>Um estudo de 2014 com células humanas mostrou que o CBD reduz a produção de sebo e tem efeito anti-inflamatório nos sebócitos. Esse é um dos achados mais citados na área, mas ainda não foi confirmado por estudos clínicos robustos em pessoas com acne.</p>
-<h2>Hiperidrose (suor excessivo)</h2>
-<p>Apesar de existirem receptores canabinoides nas glândulas sudoríparas, não há, até o momento, estudos clínicos que mostrem benefício de canabinoides tópicos na hiperidrose. Os tratamentos com eficácia comprovada são outros, como antitranspirantes específicos, toxina botulínica, iontoforese e medicamentos orais em casos selecionados, sempre com avaliação médica.</p>
-<h2>Rejuvenescimento</h2>
-<p>O CBD tem ação antioxidante em testes de laboratório, o que alimenta a promessa de produtos "antienvelhecimento". Não há, porém, estudos de qualidade em pessoas mostrando que cremes com canabinoides reduzam rugas ou manchas. O que tem eficácia comprovada continua sendo fotoproteção diária, retinoides tópicos e outros tratamentos indicados por dermatologista.</p>
-<h2>Como são as formulações estudadas</h2>
-<p>Nos estudos, os canabinoides aparecem em pomadas, cremes, géis e óleos. Um desafio comum a todos é que essas moléculas são muito oleosas e penetram pouco: a maior parte fica nas camadas superficiais da pele. Isso pode ser uma vantagem para tratar problemas locais, mas limita o efeito em camadas mais profundas.</p>
-<h2>O que diz a regulamentação no Brasil</h2>
-<p>Em janeiro de 2026, a Anvisa aprovou a atualização das regras para produtos de cannabis medicinal, incluindo a via de uso dermatológica. Isso vale para produtos autorizados pela própria Anvisa e com prescrição médica. A manipulação de fórmulas com cannabis em farmácias ainda depende de regulamentação específica, e cosméticos que sugerem conter derivados de cannabis já foram proibidos pela Agência.</p>
-<div class="note"><b>Importante:</b> desconfie de cremes vendidos como "à base de cannabis" sem registro na Anvisa. Problemas de pele devem ser avaliados por um médico, de preferência dermatologista.</div>`,
-  refs:[
-    "Bíró T, Tóth BI, Haskó G, Paus R, Pacher P. The endocannabinoid system of the skin in health and disease: novel perspectives and therapeutic opportunities. Trends in Pharmacological Sciences. 2009;30(8):411-420.",
-    "Ständer S, Schmelz M, Metze D, Luger T, Rukwied R. Distribution of cannabinoid receptor 1 (CB1) and 2 (CB2) on sensory nerve fibers and adnexal structures in human skin. Journal of Dermatological Science. 2005;38(3):177-188.",
-    "Oláh A, Tóth BI, Borbíró I, et al. Cannabidiol exerts sebostatic and antiinflammatory effects on human sebocytes. Journal of Clinical Investigation. 2014;124(9):3713-3724.",
-    "Baswan SM, Klosner AE, Glynn K, et al. Therapeutic potential of cannabidiol (CBD) for skin health and disorders. Clinical, Cosmetic and Investigational Dermatology. 2020;13:927-942.",
-    "Maida V, Corban J. Topical medical cannabis: a new treatment for wound pain — three cases of pyoderma gangrenosum. Journal of Pain and Symptom Management. 2017;54(5):732-736.",
-    "Palmieri B, Laurino C, Vadalà M. A therapeutic effect of CBD-enriched ointment in inflammatory skin diseases and cutaneous scars. La Clinica Terapeutica. 2019;170(2):e93-e99.",
-    "Nawrocki S, Cha J. The etiology, diagnosis, and management of hyperhidrosis: a comprehensive review. Part II. Therapeutic options. Journal of the American Academy of Dermatology. 2019;81(3):669-680.",
-    "Agência Nacional de Vigilância Sanitária (Anvisa). Anvisa aprova por unanimidade regras que cumprem decisão do STJ para produção de cannabis medicinal. Notícia publicada em 28 de janeiro de 2026."
-  ]
-},
-{
-  slug:"ansiedade-depressao-tept",
-  draft:true,
-  cat:"Saúde mental",
-  date:"2026-11-16",
-  cover:"mente",
-  title:"Ansiedade, depressão e TEPT: o que a ciência diz sobre a cannabis",
-  summary:"Os três transtornos são diferentes e têm tratamentos com eficácia comprovada. Entenda o que é cada um, os principais sintomas, como agem os tratamentos e em que ponto estão os estudos com canabinoides.",
-  body:`
-<p>Ansiedade, depressão e transtorno de estresse pós-traumático (TEPT) estão entre as condições de saúde mental mais comuns, e muitas vezes aparecem juntas. Também estão entre os motivos mais citados por quem procura informações sobre cannabis. Antes de falar dela, é importante entender cada transtorno e o que já funciona.</p>
-<div class="cards3">
-<div class="c3"><i data-icon="wave"></i><h3>Ansiedade generalizada</h3><p>Preocupação excessiva e difícil de controlar, na maior parte dos dias, por pelo menos seis meses.</p><ul><li>Inquietação e tensão muscular</li><li>Cansaço fácil</li><li>Dificuldade de concentração</li><li>Irritabilidade</li><li>Sono alterado</li></ul></div>
-<div class="c3"><i data-icon="cloud"></i><h3>Depressão</h3><p>Humor deprimido ou perda de interesse e prazer, por pelo menos duas semanas, com prejuízo na rotina.</p><ul><li>Tristeza ou vazio persistente</li><li>Alterações de sono e apetite</li><li>Falta de energia</li><li>Culpa ou sensação de inutilidade</li><li>Dificuldade para pensar e decidir</li></ul></div>
-<div class="c3"><i data-icon="bolt"></i><h3>TEPT</h3><p>Surge após um evento traumático e dura mais de um mês.</p><ul><li>Lembranças intrusivas e pesadelos</li><li>Evitar lugares e situações ligadas ao trauma</li><li>Pensamentos e emoções negativas</li><li>Sobressaltos e estado de alerta constante</li><li>Insônia</li></ul></div>
-</div>
-<p>Esses quadros têm critérios definidos e são diagnosticados em consulta. Ter um ou outro sintoma não significa ter o transtorno.</p>
-<h2>Tratamentos com eficácia comprovada</h2>
-<h3>Psicoterapia</h3>
-<p>A terapia cognitivo-comportamental (TCC) é uma das abordagens mais estudadas nos três transtornos. Ela ajuda a identificar e mudar padrões de pensamento e de comportamento que mantêm o sofrimento. No TEPT, as terapias focadas no trauma, como a TCC focada no trauma e a dessensibilização e reprocessamento por movimentos oculares (EMDR), são a primeira escolha das diretrizes internacionais. Nelas, a pessoa revisita a memória de forma segura e gradual, o que permite ao cérebro "reaprender" que aquela lembrança não representa um perigo atual. Esse processo se chama <b>extinção do medo</b>.</p>
-<h3>Medicamentos</h3>
-<p>Os inibidores seletivos da recaptação de serotonina (ISRS) e os inibidores da recaptação de serotonina e noradrenalina (IRSN) são medicamentos de primeira linha para ansiedade generalizada, depressão e TEPT. Eles bloqueiam a "recaptação" desses mensageiros químicos pelos neurônios, deixando-os disponíveis por mais tempo na comunicação entre as células. Com as semanas, isso leva a adaptações nos circuitos cerebrais ligados ao humor e ao medo. Uma grande análise publicada na revista <i>The Lancet</i> em 2018, reunindo 522 estudos, confirmou que os antidepressivos são mais eficazes que o placebo na depressão em adultos.</p>
-<h3>Hábitos</h3>
-<p>Atividade física regular, sono adequado e redução do álcool fazem parte do tratamento e ajudam na resposta às outras abordagens.</p>
-<h2>E a cannabis?</h2>
-<p>O sistema endocanabinoide participa da regulação do medo, do estresse e do humor. Um estudo clássico, publicado na revista <i>Nature</i> em 2002, mostrou que animais sem o receptor CB1 tinham dificuldade de "apagar" memórias de medo. Em pessoas com TEPT, há estudos de imagem que encontraram alterações nesse sistema.</p>
-<div class="scene" data-scene="sinapse" data-variant="medo"></div>
-<p>Isso explica o interesse científico. Mas, quando se olha para os estudos clínicos, o quadro é mais cauteloso:</p>
-<ul>
-<li><b>Ansiedade:</b> o CBD tem resultados preliminares interessantes. Em um estudo com 24 pessoas com ansiedade social, uma dose única antes de falar em público reduziu a ansiedade. O CBD parece agir, entre outros alvos, no receptor de serotonina 5-HT1A. Faltam estudos maiores e de longo prazo.</li>
-<li><b>Depressão:</b> não há evidência de que canabinoides tratem a depressão. Pelo contrário, o uso frequente de cannabis está associado a pior evolução em algumas pessoas.</li>
-<li><b>TEPT:</b> um estudo pequeno com 10 militares mostrou redução de pesadelos com nabilona, um canabinoide sintético. Já um estudo randomizado de 2021 com cannabis fumada não encontrou diferença em relação ao placebo nos sintomas de TEPT.</li>
-</ul>
-<p>Uma revisão sistemática publicada em 2019 na revista <i>The Lancet Psychiatry</i>, que reuniu 83 estudos, concluiu que as evidências para o uso de canabinoides em transtornos mentais são escassas e de baixa qualidade.</p>
-<h2>Riscos que precisam entrar na conversa</h2>
-<p>O THC pode piorar a ansiedade em doses mais altas e, em pessoas com predisposição, o uso frequente de cannabis com alto teor de THC está associado a maior risco de psicose. Por isso, a decisão sobre qualquer canabinoide em saúde mental precisa ser individual, com avaliação cuidadosa, e nunca deve substituir os tratamentos já comprovados.</p>
-<div class="note"><b>Se você está em sofrimento:</b> procure ajuda. O CVV atende 24 horas pelo telefone 188, de graça. Em situação de emergência, procure o pronto-socorro mais próximo ou ligue 192.</div>`,
-  refs:[
-    "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR). Washington, DC: APA; 2022.",
-    "National Institute for Health and Care Excellence (NICE). Generalised anxiety disorder and panic disorder in adults: management. Clinical guideline CG113. 2011.",
-    "National Institute for Health and Care Excellence (NICE). Post-traumatic stress disorder. NICE guideline NG116. 2018.",
-    "Cipriani A, Furukawa TA, Salanti G, et al. Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: a systematic review and network meta-analysis. The Lancet. 2018;391(10128):1357-1366.",
-    "Marsicano G, Wotjak CT, Azad SC, et al. The endogenous cannabinoid system controls extinction of aversive memories. Nature. 2002;418(6897):530-534.",
-    "Neumeister A, Normandin MD, Pietrzak RH, et al. Elevated brain cannabinoid CB1 receptor availability in post-traumatic stress disorder: a positron emission tomography study. Molecular Psychiatry. 2013;18(9):1034-1040.",
-    "Bergamaschi MM, Queiroz RH, Chagas MH, et al. Cannabidiol reduces the anxiety induced by simulated public speaking in treatment-naïve social phobia patients. Neuropsychopharmacology. 2011;36(6):1219-1226.",
-    "Russo EB, Burnett A, Hall B, Parker KK. Agonistic properties of cannabidiol at 5-HT1a receptors. Neurochemical Research. 2005;30(8):1037-1043.",
-    "Jetly R, Heber A, Fraser G, Boisvert D. The efficacy of nabilone, a synthetic cannabinoid, in the treatment of PTSD-associated nightmares: a preliminary randomized, double-blind, placebo-controlled cross-over design study. Psychoneuroendocrinology. 2015;51:585-588.",
-    "Bonn-Miller MO, Sisley S, Riggs P, et al. The short-term impact of 3 smoked cannabis preparations versus placebo on PTSD symptoms: a randomized cross-over clinical trial. PLoS One. 2021;16(3):e0246990.",
-    "Black N, Stockings E, Campbell G, et al. Cannabinoids for the treatment of mental disorders and symptoms of mental disorders: a systematic review and meta-analysis. The Lancet Psychiatry. 2019;6(12):995-1010.",
-    "Di Forti M, Quattrone D, Freeman TP, et al. The contribution of cannabis use to variation in the incidence of psychotic disorder across Europe (EU-GEI): a multicentre case-control study. The Lancet Psychiatry. 2019;6(5):427-436."
-  ]
-},
-{
-  slug:"terpenos",
-  draft:true,
-  cat:"Ciência",
-  date:"2026-11-13",
-  cover:"terpenos",
-  title:"O que são terpenos e qual é a sua função?",
-  summary:"São eles que dão o cheiro do limão, da lavanda e da pimenta-do-reino. Conheça os principais terpenos, onde estão, o que se sabe sobre seus efeitos no corpo e o debate sobre o chamado efeito comitiva.",
-  body:`
-<p>O aroma do limão, o perfume da lavanda e o cheiro ardido da pimenta-do-reino têm algo em comum: todos vêm de <b>terpenos</b>. São moléculas voláteis, ou seja, que evaporam com facilidade, produzidas por milhares de plantas. Na natureza, elas servem para atrair polinizadores, afastar insetos e proteger a planta.</p>
-<h2>Terpenos e cannabis</h2>
-<p>A <i>Cannabis sativa</i> produz mais de cem terpenos diferentes, além dos canabinoides. São eles que explicam por que variedades diferentes da planta têm cheiros diferentes. Mas nenhum deles é exclusivo da cannabis: todos estão presentes em alimentos e plantas do dia a dia.</p>
-<div class="terp">
-<div class="t"><i data-icon="lemon"></i><h3>Limoneno</h3><p class="t-k">Aroma cítrico</p><p><b>Onde está:</b> casca de limão, laranja e outras frutas cítricas.</p><p><b>O que se estuda:</b> efeito sobre o humor e o estresse. Há estudos com aromas cítricos em pessoas, mas pequenos.</p></div>
-<div class="t"><i data-icon="mango"></i><h3>Mirceno</h3><p class="t-k">Aroma terroso e herbal</p><p><b>Onde está:</b> manga, lúpulo, capim-limão e tomilho.</p><p><b>O que se estuda:</b> efeito relaxante e sedativo, observado sobretudo em animais.</p></div>
-<div class="t"><i data-icon="pepper"></i><h3>Beta-cariofileno</h3><p class="t-k">Aroma picante</p><p><b>Onde está:</b> pimenta-do-reino, cravo e alecrim.</p><p><b>O que se estuda:</b> é o único terpeno comum que se liga diretamente ao receptor canabinoide CB2, ligado à inflamação.</p></div>
-<div class="t"><i data-icon="lavender"></i><h3>Linalol</h3><p class="t-k">Aroma floral</p><p><b>Onde está:</b> lavanda, coentro e manjericão.</p><p><b>O que se estuda:</b> efeito ansiolítico do aroma, demonstrado em camundongos.</p></div>
-<div class="t"><i data-icon="pine"></i><h3>Pineno</h3><p class="t-k">Aroma de pinheiro, fresco</p><p><b>Onde está:</b> pinheiro, alecrim e manjericão.</p><p><b>O que se estuda:</b> efeitos sobre atenção e memória e ação anti-inflamatória, ainda em fase inicial.</p></div>
-<div class="t"><i data-icon="hops"></i><h3>Humuleno</h3><p class="t-k">Aroma amadeirado</p><p><b>Onde está:</b> lúpulo, sálvia e gengibre.</p><p><b>O que se estuda:</b> ação anti-inflamatória, observada em laboratório e em animais.</p></div>
-</div>
-<p class="fig-cap">Ilustrações: produção própria.</p>
-<h2>Os terpenos mudam o humor ou dão energia?</h2>
-<p>É comum encontrar na internet listas que atribuem a cada terpeno um efeito específico, como "dar energia", "melhorar o humor" ou "aumentar a sociabilidade". A maior parte dessas afirmações vem de estudos em animais, de testes com aromas inalados ou da experiência relatada por usuários. Em pessoas, os estudos controlados ainda são poucos e pequenos. É razoável dizer que alguns terpenos têm efeitos sobre o corpo, mas não que cada um produza um efeito previsível.</p>
-<h2>O "efeito comitiva"</h2>
-<p>Em 2011, uma revisão influente propôs que os terpenos poderiam agir em conjunto com os canabinoides, potencializando ou modulando seus efeitos. A ideia ganhou o nome de <b>efeito comitiva</b> (em inglês, <i>entourage effect</i>) e é o principal argumento a favor dos extratos de "espectro completo", que mantêm canabinoides e terpenos da planta, em vez de uma molécula isolada.</p>
-<div class="scene" data-scene="terpenos"></div>
-<p>A hipótese é plausível, mas os estudos ainda não chegaram a uma conclusão. Um trabalho de 2019 testou os terpenos mais comuns em células com receptores CB1 e CB2 e não encontrou efeito sobre a ação do THC. Outro, de 2021, encontrou efeitos em camundongos. A única ação bem estabelecida é a do beta-cariofileno sobre o receptor CB2.</p>
-<p>Na prática, isso significa que extratos de espectro completo e produtos com moléculas isoladas são opções diferentes, cada uma com vantagens e limitações. A escolha, quando há indicação, depende de cada caso e do que está disponível de forma regularizada.</p>
-<div class="note"><b>Importante:</b> óleos essenciais concentrados não devem ser ingeridos sem orientação. Alguns podem irritar a pele e as mucosas ou causar intoxicação.</div>`,
-  refs:[
-    "Russo EB. Taming THC: potential cannabis synergy and phytocannabinoid-terpenoid entourage effects. British Journal of Pharmacology. 2011;163(7):1344-1364.",
-    "Gertsch J, Leonti M, Raduner S, et al. Beta-caryophyllene is a dietary cannabinoid. Proceedings of the National Academy of Sciences of the USA. 2008;105(26):9099-9104.",
-    "Santiago M, Sachdev S, Arnold JC, McGregor IS, Connor M. Absence of entourage: terpenoids commonly found in Cannabis sativa do not modulate the functional activity of Δ9-THC at human CB1 and CB2 receptors. Cannabis and Cannabinoid Research. 2019;4(3):165-176.",
-    "LaVigne JE, Hecksel R, Keresztes A, Streicher JM. Cannabis sativa terpenes are cannabimimetic and selectively enhance cannabinoid activity. Scientific Reports. 2021;11:8232.",
-    "Weston-Green K, Clunas H, Jimenez Naranjo C. A review of the potential use of pinene and linalool as terpene-based medicines for brain health: discovering novel therapeutics in the flavours and fragrances of cannabis. Frontiers in Psychiatry. 2021;12:583211.",
-    "Harada H, Kashiwadani H, Kanmura Y, Kuwaki T. Linalool odor-induced anxiolytic effects in mice. Frontiers in Behavioral Neuroscience. 2018;12:241.",
-    "Komori T, Fujiwara R, Tanida M, Nomura J, Yokoyama MM. Effects of citrus fragrance on immune function and depressive states. Neuroimmunomodulation. 1995;2(3):174-180.",
-    "do Vale TG, Furtado EC, Santos JG Jr, Viana GS. Central effects of citral, myrcene and limonene, constituents of essential oil chemotypes from Lippia alba (Mill.) N.E. Brown. Phytomedicine. 2002;9(8):709-714."
-  ]
-},
-{
-  slug:"fibromialgia",
-  draft:true,
-  cat:"Dor",
-  date:"2026-11-11",
-  cover:"dor",
-  title:"Tratamento endocanabinoide ajuda na fibromialgia?",
-  summary:"A fibromialgia é uma dor real, ligada à forma como o sistema nervoso processa os sinais de dor. Entenda quem é mais afetado, o papel da genética e das emoções, o que funciona no tratamento e o que os estudos dizem sobre a cannabis.",
-  body:`
-<p>Dor pelo corpo todo, cansaço que não passa com o descanso, sono que não recupera e dificuldade de concentração. Quem convive com a fibromialgia costuma ouvir que "os exames estão normais". Os exames de fato costumam vir normais, mas a dor é real, e a ciência já entende boa parte do que acontece.</p>
-<h2>O que é a fibromialgia</h2>
-<p>A fibromialgia é uma síndrome de dor crônica generalizada, presente por pelo menos três meses, geralmente acompanhada de fadiga, sono não reparador e alterações de memória e atenção. Não é uma inflamação dos músculos nem das articulações. O problema está no <b>processamento da dor</b>: o sistema nervoso passa a amplificar os sinais que recebe. Esse fenômeno é chamado de <b>sensibilização central</b>.</p>
-<div class="scene" data-scene="dor"></div>
-<h2>Quem é mais afetado</h2>
-<ul>
-<li>A fibromialgia atinge cerca de 2% a 4% da população. Um estudo realizado no Brasil encontrou prevalência de 2,5%.</li>
-<li>É mais frequente em mulheres, sobretudo entre os 30 e os 50 anos, mas pode aparecer em homens e em outras idades.</li>
-</ul>
-<h2>Genética e fatores que predispõem</h2>
-<p>A fibromialgia se concentra em famílias: em um estudo, parentes de primeiro grau de pessoas com fibromialgia tiveram uma chance cerca de oito vezes maior de também ter a síndrome. Isso não significa que exista um "gene da fibromialgia", e sim que vários genes ligados ao processamento da dor e ao estresse aumentam a vulnerabilidade.</p>
-<p>Sobre essa predisposição, outros fatores podem funcionar como gatilho ou piora:</p>
-<div class="gloss">
-<div class="g"><i data-icon="moon"></i><b>Sono ruim</b><span>Noites mal dormidas aumentam a sensibilidade à dor, e a dor piora o sono.</span></div>
-<div class="g"><i data-icon="wave"></i><b>Estresse e traumas</b><span>Estresse prolongado e experiências traumáticas alteram os sistemas que regulam a dor.</span></div>
-<div class="g"><i data-icon="cell"></i><b>Outras doenças</b><span>Infecções, doenças reumatológicas e outras dores crônicas podem precipitar o quadro.</span></div>
-<div class="g"><i data-icon="walk"></i><b>Sedentarismo</b><span>A falta de movimento reduz os mecanismos naturais de controle da dor.</span></div>
-</div>
-<h2>A relação com as emoções</h2>
-<p>Ansiedade e depressão são mais comuns em pessoas com fibromialgia. Isso não quer dizer que a dor seja "psicológica". Dor, humor e sono dividem circuitos cerebrais e mensageiros químicos, como a serotonina e a noradrenalina. Por isso uma coisa influencia a outra nos dois sentidos, e cuidar da saúde emocional faz parte do tratamento da dor.</p>
-<h2>O que funciona no tratamento</h2>
-<p>As recomendações europeias de reumatologia colocam a <b>atividade física</b>, iniciada de forma gradual, como a medida com maior nível de evidência. Educação sobre a doença, cuidado com o sono e terapia cognitivo-comportamental também ajudam. Alguns medicamentos, como amitriptilina, duloxetina e pregabalina, podem ser úteis para parte das pessoas.</p>
-<h2>Onde entra o sistema endocanabinoide</h2>
-<p>O sistema endocanabinoide participa do controle da dor em vários níveis: nos nervos, na medula espinhal e nas regiões do cérebro que "diminuem o volume" da dor. Receptores CB1 estão presentes nessas vias, e receptores CB2 aparecem em células de defesa ligadas à inflamação. Existe ainda uma hipótese, chamada de deficiência clínica de endocanabinoides, que propõe que algumas dores crônicas estariam ligadas a um funcionamento reduzido desse sistema. É uma hipótese em estudo, ainda não comprovada.</p>
-<h2>O que os estudos com cannabis mostram</h2>
-<ul>
-<li>Uma revisão da Cochrane encontrou apenas dois estudos pequenos com nabilona, um canabinoide sintético, e classificou as evidências como de qualidade muito baixa, sem conclusão segura sobre benefício.</li>
-<li>Um estudo de 2019 com 20 mulheres com fibromialgia comparou três variedades de cannabis medicinal com placebo. Nenhuma reduziu a dor espontânea mais que o placebo, que era o objetivo principal do estudo. A variedade com THC e CBD aumentou a tolerância à dor causada por pressão.</li>
-</ul>
-<p>Em resumo: há uma base biológica que justifica a pesquisa, e algumas pessoas relatam alívio, mas os estudos clínicos ainda não permitem afirmar que a cannabis trate a fibromialgia. Quando considerada, deve ser uma opção individual, complementar, avaliada caso a caso, com atenção aos efeitos colaterais, como tontura, sonolência e boca seca, e às interações com outros remédios.</p>
-<div class="note"><b>Importante:</b> a fibromialgia tem tratamento, e a combinação de movimento, sono, cuidado emocional e acompanhamento médico costuma trazer a maior melhora.</div>`,
-  refs:[
-    "Clauw DJ. Fibromyalgia: a clinical review. JAMA. 2014;311(15):1547-1555.",
-    "Häuser W, Ablin J, Fitzcharles MA, et al. Fibromyalgia. Nature Reviews Disease Primers. 2015;1:15022.",
-    "Senna ER, De Barros AL, Silva EO, et al. Prevalence of rheumatic diseases in Brazil: a study using the COPCORD approach. Journal of Rheumatology. 2004;31(3):594-597.",
-    "Arnold LM, Hudson JI, Hess EV, et al. Family study of fibromyalgia. Arthritis & Rheumatism. 2004;50(3):944-952.",
-    "Macfarlane GJ, Kronisch C, Dean LE, et al. EULAR revised recommendations for the management of fibromyalgia. Annals of the Rheumatic Diseases. 2017;76(2):318-328.",
-    "Woodhams SG, Chapman V, Finn DP, Hohmann AG, Neugebauer V. The cannabinoid system and pain. Neuropharmacology. 2017;124:105-120.",
-    "Russo EB. Clinical endocannabinoid deficiency reconsidered: current research supports the theory in migraine, fibromyalgia, irritable bowel, and other treatment-resistant syndromes. Cannabis and Cannabinoid Research. 2016;1(1):154-165.",
-    "Walitt B, Klose P, Fitzcharles MA, Phillips T, Häuser W. Cannabinoids for fibromyalgia. Cochrane Database of Systematic Reviews. 2016;(7):CD011694.",
-    "van de Donk T, Niesters M, Kowal MA, Olofsen E, Dahan A, van Velzen M. An experimental randomized study on the analgesic effects of pharmaceutical-grade cannabis in chronic pain patients with fibromyalgia. Pain. 2019;160(4):860-869."
-  ]
-},
 {
   slug:"sistema-endocanabinoide",
   photo:{src:"https://images.unsplash.com/photo-1716833322990-acbeae5cc3eb?w=1400&h=735&fit=crop&crop=entropy&q=75&auto=format",credit:"Bioscience Image Library by Fayette Reynolds / Unsplash",alt:"Neurônio motor da medula espinhal visto ao microscópio"},
@@ -1277,121 +1125,6 @@ const BlogKit = (function(){
         g.lCB1.setAttribute("opacity",st>=2?1:.35); g.lEC.setAttribute("opacity",st>=1&&st<3?1:0); g.lEnz.setAttribute("opacity",st===3?1:0);
       }
     },
-    dor:{
-      caps:["Um estímulo no corpo gera sinais que sobem pelos nervos até a medula e o cérebro, onde a dor é percebida.","Na fibromialgia, o sistema nervoso amplifica esses sinais. É a sensibilização central: o “volume” da dor fica alto.","O cérebro tem vias que descem e diminuem esse volume. Na fibromialgia, esse freio natural costuma funcionar menos.","Receptores do sistema endocanabinoide estão presentes nessas vias, no cérebro e na medula, e participam do controle da dor.","Por isso os canabinoides são estudados na fibromialgia. Nos estudos com pessoas, porém, o efeito ainda é incerto."],
-      build(svg){
-        const g={}; const b=el(svg,"g",{fill:"none",stroke:C.mist,"stroke-width":10,"stroke-linecap":"round","stroke-linejoin":"round",opacity:.5});
-        el(b,"circle",{cx:160,cy:70,r:30}); el(b,"path",{d:"M160 104v150M160 140l-70 70M160 140l70 70M160 254l-45 110M160 254l45 110"});
-        el(svg,"path",{d:"M160 104v150",stroke:C.gold,"stroke-width":3,"stroke-dasharray":"4 6",opacity:.8});
-        g.brain=el(svg,"circle",{cx:160,cy:70,r:22,fill:"url(#gNeuron)",filter:"url(#fGlow)"});
-        g.hand=el(svg,"circle",{cx:230,cy:210,r:9,fill:"url(#gCoral)"});
-        g.up=[...Array(6)].map(()=>el(svg,"circle",{r:6,fill:"url(#gCoral)"}));
-        g.down=[...Array(4)].map(()=>el(svg,"circle",{r:6,fill:"url(#gMist)"}));
-        g.ecs=[[160,70],[160,200]].map(([x,y])=>el(svg,"circle",{cx:x+26,cy:y,r:8,fill:"url(#gGold)",filter:"url(#fGlow)"}));
-        txt(svg,252,214,"Estímulo",{fill:C.rose,"font-size":12}); txt(svg,196,40,"Cérebro",{"font-size":12}); txt(svg,180,282,"Medula espinhal",{"font-size":12});
-        const cx=440,cy=250; el(svg,"path",{d:`M${cx-110} ${cy}A110 110 0 0 1 ${cx+110} ${cy}`,fill:"none",stroke:"#24396a","stroke-width":22,"stroke-linecap":"round"});
-        g.arc=el(svg,"path",{fill:"none",stroke:"url(#gCoral)","stroke-width":22,"stroke-linecap":"round"});
-        g.needle=el(svg,"line",{x1:cx,y1:cy,stroke:C.ivory,"stroke-width":4,"stroke-linecap":"round"}); el(svg,"circle",{cx,cy,r:9,fill:C.ivory});
-        txt(svg,cx,cy+40,"Volume da dor",{"text-anchor":"middle","font-size":14,"font-weight":600});
-        g.lEcs=txt(svg,196,182,"Receptores CB1",{fill:C.gold,"font-size":12,"font-weight":600}); g.lv=0.3; g.cx=cx; g.cy=cy; return g;
-      },
-      draw(g,p,t){
-        const s=p*5, st=Math.min(4,Math.floor(s)); const target=[0.3,0.9,0.6,0.5,0.55][st]; g.lv=lerp(g.lv,target,0.05);
-        const a=Math.PI*(1-g.lv), r=110, ex=g.cx+r*Math.cos(Math.PI*(1-g.lv)), ey=g.cy-r*Math.sin(Math.PI*(1-g.lv));
-        g.arc.setAttribute("d",`M${g.cx-110} ${g.cy}A110 110 0 0 1 ${ex.toFixed(1)} ${ey.toFixed(1)}`);
-        g.needle.setAttribute("x2",g.cx+86*Math.cos(a)); g.needle.setAttribute("y2",g.cy-86*Math.sin(a));
-        const path=u=> u<.4? [lerp(230,160,u/.4), 210-((u/.4)*10)] : [160, lerp(200,70,(u-.4)/.6)];
-        g.up.forEach((c,i)=>{ const u=((t*0.0004*(0.6+g.lv))+i/6)%1; const [x,y]=path(u); c.setAttribute("cx",x); c.setAttribute("cy",y); c.setAttribute("r",4+g.lv*6); c.setAttribute("opacity",(i/6)<0.25+g.lv*0.8?1:0); });
-        g.down.forEach((c,i)=>{ const u=((t*0.0003)+i/4)%1; c.setAttribute("cx",148); c.setAttribute("cy",lerp(80,250,u)); c.setAttribute("opacity",st>=2?.9:0); });
-        g.brain.setAttribute("r",20+g.lv*8); g.ecs.forEach(c=>c.setAttribute("opacity",st>=3?1:0)); g.lEcs.setAttribute("opacity",st>=3?1:0);
-      }
-    },
-    pele:{
-      caps:["A pele tem camadas: epiderme, derme e hipoderme, com folículos, glândulas, nervos e vasos.","Nessas estruturas existem receptores canabinoides, que formam o sistema endocanabinoide da pele.","Na inflamação, células de defesa liberam substâncias que causam vermelhidão, coceira e dor.","Aplicados na pele, os canabinoides penetram pouco: a maior parte fica nas camadas superficiais.","Em laboratório, eles reduzem a inflamação. Em pessoas, os estudos ainda são pequenos e iniciais."],
-      build(svg){
-        const g={};
-        g.cream=el(svg,"path",{d:"M20 40q70-14 140 0t140 0 140 0 140 0v26H20z",fill:"#ffffff",opacity:0});
-        el(svg,"path",{d:"M20 66q70-14 140 0t140 0 140 0 140 0v54H20z",fill:"#e7c4aa",filter:"url(#fShadow)"});
-        el(svg,"rect",{x:20,y:118,width:560,height:180,fill:"#f1d8c6"}); el(svg,"rect",{x:20,y:298,width:560,height:92,rx:0,fill:"#f3e3bf"});
-        el(svg,"path",{d:"M140 30L140 66M140 66q-10 90 0 200",stroke:"#4a2e22","stroke-width":7,fill:"none"}); el(svg,"ellipse",{cx:140,cy:268,rx:16,ry:20,fill:"#c9926f"});
-        el(svg,"ellipse",{cx:172,cy:170,rx:22,ry:15,fill:"#f2c86a"});
-        el(svg,"path",{d:"M430 66v150q-30 10-20 30t30 10 20-30-30-10",fill:"none",stroke:"#7fb2d6","stroke-width":5});
-        el(svg,"path",{d:"M20 230q80-30 160 0t160 0 160 0 80 0",fill:"none",stroke:"#e3b04b","stroke-width":3,"stroke-dasharray":"2 5"});
-        el(svg,"path",{d:"M20 285h560",stroke:"#c95b5b","stroke-width":9,"stroke-linecap":"round",opacity:.7});
-        const lab=(x,y,s)=>txt(svg,x,y,s,{fill:C.navy,"font-size":12,"font-weight":600});
-        lab(500,98,"Epiderme"); lab(500,150,"Derme"); lab(480,350,"Hipoderme"); lab(196,174,"Glândula sebácea"); lab(452,236,"Glândula sudorípara"); lab(60,224,"Nervo");
-        g.rec=[[150,120],[180,160],[160,240],[420,120],[440,240],[90,226],[260,230],[340,226]].map(([x,y])=>el(svg,"circle",{cx:x,cy:y,r:6,fill:"url(#gGold)",stroke:C.goldInk,"stroke-width":1.5,opacity:0}));
-        g.inf=[...Array(14)].map((_,i)=>el(svg,"circle",{cx:250+(i*37)%160,cy:150+(i*29)%110,r:7,fill:"#d9534f",opacity:0}));
-        g.imm=[...Array(4)].map((_,i)=>el(svg,"circle",{cx:270+i*40,cy:200+(i%2)*30,r:11,fill:"#8a6fb0",opacity:0}));
-        g.cbd=[...Array(18)].map(()=>el(svg,"circle",{r:4.5,fill:"url(#gGold)",opacity:0}));
-        g.lCream=txt(svg,40,34,"Creme com canabinoide",{fill:C.ivory,"font-size":12,"font-weight":600,opacity:0}); return g;
-      },
-      draw(g,p,t){
-        const s=p*5, st=Math.min(4,Math.floor(s)), k=s-st;
-        g.rec.forEach(c=>c.setAttribute("opacity",st>=1?1:0));
-        const infl=st===2?clamp(k*2,0,1):st>=3?0.55:0;
-        g.inf.forEach((c,i)=>{ c.setAttribute("opacity",(infl*(0.5+0.5*Math.sin(t*0.004+i))).toFixed(2)); c.setAttribute("r",6+2*Math.sin(t*0.003+i)); });
-        g.imm.forEach(c=>c.setAttribute("opacity",infl*0.9));
-        const cream=st>=3; g.cream.setAttribute("opacity",cream?.85:0); g.lCream.setAttribute("opacity",cream?1:0);
-        g.cbd.forEach((c,i)=>{ const u=((t*0.00025)+i/18)%1; const deep=i%6===0?240:110; c.setAttribute("cx",60+(i*31)%500); c.setAttribute("cy",lerp(52,deep,Math.min(1,u*1.4))); c.setAttribute("opacity",cream?1:0); });
-      }
-    },
-    thcv:{
-      caps:["No hipotálamo, região do cérebro que regula a fome, o receptor CB1 ajuda a ajustar o apetite.","O THC se encaixa no CB1 e o ativa. Por isso pode aumentar o apetite.","O rimonabanto bloqueava o CB1 e reduzia o apetite, mas foi retirado do mercado em 2008 por causar ansiedade e depressão.","Em doses baixas, o THCV ocupa o CB1 sem ativá-lo. Em animais, isso reduziu o apetite e melhorou a ação da insulina.","Em pessoas, os estudos ainda são poucos e pequenos. Não existe medicamento com THCV aprovado."],
-      build(svg){
-        const g={};
-        el(svg,"path",{d:"M30 280h400",stroke:C.mist,"stroke-width":4,opacity:.6}); el(svg,"rect",{x:30,y:280,width:400,height:100,fill:"url(#gNeuron)",opacity:.6});
-        g.rec=el(svg,"path",{d:"M190 280v-50a40 40 0 0 1 80 0v50",fill:"none",stroke:C.gold,"stroke-width":12,"stroke-linecap":"round"});
-        txt(svg,230,316,"Receptor CB1",{"text-anchor":"middle",fill:C.gold,"font-size":13,"font-weight":600});
-        g.mol={ ec:el(svg,"circle",{r:22,fill:"url(#gGold)"}), thc:el(svg,"rect",{x:-26,y:-14,width:52,height:28,rx:10,fill:"url(#gCoral)"}), rim:el(svg,"rect",{x:-28,y:-18,width:56,height:36,rx:6,fill:"#7b8496"}), thcv:el(svg,"path",{d:"M0-24l21 12v24L0 24-21 12v-24z",fill:"url(#gMist)"}) };
-        g.lab=txt(svg,230,90,"",{"text-anchor":"middle","font-size":15,"font-weight":600});
-        el(svg,"rect",{x:500,y:70,width:44,height:250,rx:22,fill:"none",stroke:C.mist,"stroke-width":3});
-        g.bar=el(svg,"rect",{x:506,width:32,rx:16,fill:"url(#gCoral)"});
-        txt(svg,522,345,"Apetite",{"text-anchor":"middle","font-size":13,"font-weight":600});
-        g.warn=txt(svg,360,150,"⚠ ansiedade · depressão",{"text-anchor":"middle",fill:C.coral,"font-size":13,"font-weight":600,opacity:0});
-        g.lv=0.5; return g;
-      },
-      draw(g,p,t){
-        const s=p*5, st=Math.min(4,Math.floor(s)), k=s-st;
-        const names=["ec","thc","rim","thcv","thcv"], labels=["Endocanabinoide","THC","Rimonabanto (bloqueador)","THCV","THCV"], target=[0.5,0.88,0.2,0.38,0.38];
-        g.lv=lerp(g.lv,target[st],0.06);
-        Object.entries(g.mol).forEach(([n,e])=>{ const on=n===names[st]; const y=on?lerp(130,238,clamp(k*2.2,0,1)):-100; e.setAttribute("transform",`translate(230 ${y}) rotate(${on?Math.sin(t*0.002)*4:0})`); e.setAttribute("opacity",on?1:0); });
-        g.lab.textContent=labels[st];
-        const active=st<=1&&k>0.4; g.rec.setAttribute("filter",active?"url(#fGlow)":""); g.rec.setAttribute("stroke",st===2?"#7b8496":C.gold); g.rec.setAttribute("opacity",st===3||st===4?.6:1);
-        const h=240*g.lv; g.bar.setAttribute("y",316-h); g.bar.setAttribute("height",h);
-        g.warn.setAttribute("opacity",st===2&&k>.45?1:0);
-      }
-    },
-    terpenos:{
-      caps:["Os terpenos são moléculas que evaporam com facilidade. Eles dão aroma ao limão, à manga, à pimenta, à lavanda, ao pinheiro e ao lúpulo.","Cada fonte tem sua combinação de terpenos: limoneno, mirceno, beta-cariofileno, linalol, pineno e humuleno.","O beta-cariofileno é o único deles que comprovadamente se liga ao receptor canabinoide CB2.","Os outros agem em diferentes alvos do corpo, e esses efeitos ainda estão em estudo.","O “efeito comitiva” propõe que terpenos e canabinoides agem melhor juntos. É uma hipótese ainda debatida."],
-      build(svg){
-        const g={}; const src=[["lemon","Limoneno"],["mango","Mirceno"],["pepper","β-cariofileno"],["lavender","Linalol"],["pine","Pineno"],["hops","Humuleno"]];
-        g.src=src.map(([ic,n],i)=>{ const x=50+i*92; const gg=el(svg,"g",{}); gg.innerHTML=iconG(ic,x-24,320,2,i%2?C.mist:C.gold); return {x,n}; });
-        g.aroma=[...Array(24)].map(()=>el(svg,"circle",{r:3,fill:C.mist}));
-        g.hex=src.map(([ic,n],i)=>{ const gg=el(svg,"g",{opacity:0}); el(gg,"path",{d:"M0-18l16 9v18L0 18-16 9v-18z",fill:"url(#gGold)",stroke:C.goldInk,"stroke-width":1.5}); txt(gg,0,34,n,{"text-anchor":"middle","font-size":11,"font-weight":600}); return gg; });
-        g.cb2=el(svg,"path",{d:"M440 120v-30a30 30 0 0 1 60 0v30",fill:"none",stroke:C.gold,"stroke-width":9,"stroke-linecap":"round",opacity:0});
-        g.lcb2=txt(svg,470,46,"Receptor CB2",{"text-anchor":"middle",fill:C.gold,"font-size":12,"font-weight":600,opacity:0});
-        g.box=el(svg,"rect",{x:40,y:40,width:200,height:90,rx:14,fill:"none",stroke:C.mist,"stroke-dasharray":"6 6",opacity:0});
-        g.lbox=txt(svg,140,62,"Outros alvos · em estudo",{"text-anchor":"middle",fill:C.mist,"font-size":12,opacity:0});
-        g.can=[["THC",C.coral],["CBD",C.mist]].map(([n,c])=>{ const gg=el(svg,"g",{opacity:0}); el(gg,"circle",{r:22,fill:c}); txt(gg,0,5,n,{"text-anchor":"middle",fill:C.navy,"font-size":12,"font-weight":700}); return gg; });
-        g.q=txt(svg,300,120,"?",{"text-anchor":"middle",fill:C.gold,"font-size":48,"font-family":"Georgia, serif",opacity:0}); return g;
-      },
-      draw(g,p,t){
-        const s=p*5, st=Math.min(4,Math.floor(s)), k=clamp((s-st)*1.6,0,1);
-        g.aroma.forEach((c,i)=>{ const u=((t*0.0003)+i/24)%1; const sx=g.src[i%6].x; c.setAttribute("cx",sx+Math.sin(u*9+i)*12); c.setAttribute("cy",320-u*120); c.setAttribute("opacity",st===0?(1-u):0); });
-        const home=(i)=>[g.src[i].x,230];
-        g.hex.forEach((h,i)=>{ let [x,y]=home(i); let o=st>=1?1:0;
-          if(st===2&&i===2){ x=lerp(x,470,k); y=lerp(y,102,k); }
-          if(st>=3&&i===2){ x=470; y=102; }
-          if(st===3&&i!==2){ x=lerp(x,70+(i>2?i-1:i)*36,k); y=lerp(y,100,k); }
-          if(st===4){ const a=i/6*Math.PI*2+t*0.0004; x=300+Math.cos(a)*110; y=230+Math.sin(a)*70; }
-          h.setAttribute("transform",`translate(${x} ${y}) scale(${st===3&&i!==2?0.7:1})`); h.setAttribute("opacity",o); });
-        const cb=st>=2; g.cb2.setAttribute("opacity",cb?1:0); g.lcb2.setAttribute("opacity",cb?1:0); g.cb2.setAttribute("filter",cb?"url(#fGlow)":"");
-        g.box.setAttribute("opacity",st===3?1:0); g.lbox.setAttribute("opacity",st===3?1:0);
-        g.can.forEach((c,i)=>{ c.setAttribute("transform",`translate(${270+i*60} 230)`); c.setAttribute("opacity",st===4?1:0); });
-        g.q.setAttribute("opacity",st===4?(0.6+0.4*Math.sin(t*0.004)):0);
-      }
-    }
   };
 
   const live=[]; let raf=0;
@@ -1433,7 +1166,7 @@ const BlogKit = (function(){
     telegram:['Telegram','<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l9-7"/>',(u,t)=>"https://t.me/share/url?url="+encodeURIComponent(u)+"&text="+encodeURIComponent(t)]
   };
   function shareBar(p){
-    const u=location.href.split("#")[0]+"#post-"+p.slug, t=p.title;
+    const u=(window.SITE_URL||location.origin)+"/blog/"+p.slug+"/", t=p.title;
     return '<div class="share" data-url="'+u+'" data-title="'+t.replace(/"/g,"&quot;")+'"><span class="share-k">Compartilhar</span>'+
       Object.entries(SH).map(([k,[n,ic,f]])=>'<a class="sh sh-'+k+'" href="'+f(u,t)+'" target="_blank" rel="noopener" aria-label="Compartilhar no '+n+'" title="'+n+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+ic+'</svg></a>').join("")+
       '<button type="button" class="sh sh-copy" aria-label="Copiar link" title="Copiar link">'+icon("link")+'</button><span class="sh-status" role="status"></span></div>';
@@ -1453,9 +1186,11 @@ const BlogKit = (function(){
 </script>
 <script>
 /* Número do WhatsApp Business com DDI e DDD, só dígitos. Ex.: "5516999999999" */
-const FORCE_PREVIEW = false; /* true só na prévia do Claude */
+const STATIC = true; /* true no site publicado (páginas próprias do blog); false na prévia do Claude */
+const SITE_URL = "https://www.drhenriquecarmelo.com.br"; window.SITE_URL = SITE_URL;
+const INITIAL_ROUTE = window.INITIAL_ROUTE || "";
 const WHATSAPP = "5516992115401";
-const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo.";
+const MSG = "Olá! Gostaria de receber informações sobre a teleconsulta com o Dr. Henrique Carmelo.";
 (function(){
   const root = document.documentElement;
   root.classList.add("js");
@@ -1488,11 +1223,10 @@ const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo."
 
   /* blog */
   const ALL_POSTS = (typeof POSTS !== "undefined") ? POSTS : [];
-  const todayISO = (() => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); })();
-  let preview = FORCE_PREVIEW; if (!preview) try { preview = localStorage.getItem("hc-previa") === "1"; } catch(e){}
-  if (location.hash === "#previa") { preview = true; try { localStorage.setItem("hc-previa","1"); } catch(e){} }
-  if (location.hash === "#previa-off") { preview = false; try { localStorage.removeItem("hc-previa"); } catch(e){} }
-  const POSTS_ = ALL_POSTS.filter(p => !p.draft && (preview || p.date <= todayISO)).sort((a,b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
+  /* só textos publicados entram no site; rascunhos ficam fora do código público */
+  const POSTS_ = ALL_POSTS.filter(p => !p.draft).sort((a,b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
+  const postHref = slug => STATIC ? "/blog/" + slug + "/" : "#post-" + slug;
+  const listHref = STATIC ? "/blog/" : "#conteudos";
   function coverFig(p){
     if (p.photo) return '<figure class="post-cover photo"><img src="' + p.photo.src + '" alt="' + esc(p.photo.alt) + '" width="1400" height="735" onerror="this.closest(\'figure\').classList.add(\'fallback\')"><span class="fb">' + BlogKit.cover(p.cover) + '</span><figcaption><span class="cap-photo">Foto: ' + esc(p.photo.credit) + '</span><span class="cap-ill">Ilustração: produção própria</span></figcaption></figure>';
     return '<figure class="post-cover">' + BlogKit.cover(p.cover) + '<figcaption>Ilustração: produção própria</figcaption></figure>';
@@ -1501,7 +1235,7 @@ const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo."
     if (p.photo) return '<span class="thumb"><img src="' + p.photo.src.replace("w=1400&h=735","w=480&h=252") + '" alt="" loading="lazy" onerror="this.remove()">' + BlogKit.cover(p.cover) + '</span>';
     return '<span class="thumb">' + BlogKit.cover(p.cover) + '</span>';
   }
-  const sched = p => p.date > todayISO ? '<span class="sched">Agendado</span>' : "";
+  const sched = p => "";
   const main = document.getElementById("site"), blog = document.getElementById("blog");
   const blogIndex = document.getElementById("blogIndex"), blogPost = document.getElementById("blogPost");
   const fmt = d => new Date(d + "T12:00:00").toLocaleDateString("pt-BR", {day:"numeric", month:"long", year:"numeric"});
@@ -1514,28 +1248,28 @@ const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo."
     document.querySelectorAll(".chip-f").forEach(b => b.addEventListener("click", () => { filter = b.textContent; renderList(); }));
     const list = POSTS_.filter(p => filter === "Todos" || p.cat === filter);
     document.getElementById("postList").innerHTML = list.length ? list.map(p =>
-      '<li class="post-row"><a href="#post-' + p.slug + '">' + thumb(p) + '<span class="meta">' + sched(p) + '<span>' + esc(p.cat) + '</span><span>' + fmt(p.date) + '</span><span>' + mins(p) + ' min de leitura</span></span><div><h3>' + esc(p.title) + '</h3><p>' + esc(p.summary) + '</p></div></a></li>'
+      '<li class="post-row"><a href="' + postHref(p.slug) + '">' + thumb(p) + '<span class="meta">' + sched(p) + '<span>' + esc(p.cat) + '</span><span>' + fmt(p.date) + '</span><span>' + mins(p) + ' min de leitura</span></span><div><h3>' + esc(p.title) + '</h3><p>' + esc(p.summary) + '</p></div></a></li>'
     ).join("") : '<li class="empty">Novos textos em breve.</li>';
   }
   function renderLatest(){
     const g = document.getElementById("latestGrid");
-    g.innerHTML = POSTS_.slice(0,3).map(p => '<a class="card-p" href="#post-' + p.slug + '">' + thumb(p) + '<span>' + esc(p.cat) + ' · ' + mins(p) + ' min</span><h3>' + esc(p.title) + '</h3><p>' + esc(p.summary) + '</p></a>').join("");
+    g.innerHTML = POSTS_.slice(0,3).map(p => '<a class="card-p" href="' + postHref(p.slug) + '">' + thumb(p) + '<span>' + esc(p.cat) + ' · ' + mins(p) + ' min</span><h3>' + esc(p.title) + '</h3><p>' + esc(p.summary) + '</p></a>').join("");
   }
   function renderPost(p){
     const others = POSTS_.filter(x => x !== p).slice(0,2);
     document.getElementById("postCol").innerHTML =
-      '<a class="backlink" href="#conteudos">← Todos os conteúdos</a>' +
+      '<a class="backlink" href="' + listHref + '">← Todos os conteúdos</a>' +
       '<span class="eyebrow">' + esc(p.cat) + '</span>' +
       '<h1>' + esc(p.title) + '</h1>' +
       sched(p) + coverFig(p) +
-      '<div class="byline"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>Henrique Carmelo Dias</b> · Médico · CRM-SP 239996</span><span>' + fmt(p.date) + ' · ' + mins(p) + ' min de leitura</span></div>' +
+      '<div class="byline"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>Henrique Carmelo Dias</b> · Médico · CRM-SP 239996</span><span><time datetime="' + p.date + '">' + fmt(p.date) + '</time> · ' + mins(p) + ' min de leitura</span></div>' +
       BlogKit.shareBar(p) +
       '<div class="prose">' + p.body + '</div>' +
       (p.refs && p.refs.length ? '<div class="refs"><h2>Referências</h2><ol>' + p.refs.map(r => '<li>' + esc(r) + '</li>').join("") + '</ol></div>' : '') +
       BlogKit.shareBar(p) +
       '<p class="disclaimer">Conteúdo informativo. Não substitui a avaliação médica individual.</p>' +
-      '<div class="post-cta"><p>Quer conversar sobre o seu caso?</p><a class="btn btn-gold js-wa" href="' + waURL + '" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar consulta</a></div>' +
-      (others.length ? '<div class="refs"><h2>Continue lendo</h2><ol style="list-style:none;padding:0">' + others.map(o => '<li><a class="backlink" href="#post-' + o.slug + '">' + esc(o.title) + ' →</a></li>').join("") + '</ol></div>' : '');
+      '<div class="post-cta"><p>Quer conversar sobre o seu caso?</p><a class="btn btn-gold js-wa" href="' + waURL + '" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Informações pelo WhatsApp</a></div>' +
+      (others.length ? '<div class="refs"><h2>Continue lendo</h2><ol style="list-style:none;padding:0">' + others.map(o => '<li><a class="backlink" href="' + postHref(o.slug) + '">' + esc(o.title) + ' →</a></li>').join("") + '</ol></div>' : '');
     const col = document.getElementById("postCol");
     BlogKit.fillIcons(col); BlogKit.bindShare(col); BlogKit.initScenes(col);
   }
@@ -1544,16 +1278,23 @@ const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo."
   let wasMain = true;
   function markNav(name){ document.querySelectorAll("[data-nav]").forEach(a => a.classList.toggle("on", a.dataset.nav === name)); }
   function route(){
-    const h = decodeURIComponent(location.hash.slice(1));
-    const isBlog = h === "conteudos" || h.startsWith("post-") || h === "previa" || h === "previa-off";
+    const h = decodeURIComponent(location.hash.slice(1)) || INITIAL_ROUTE;
+    if (STATIC && !INITIAL_ROUTE){
+      /* links antigos (#conteudos, #post-...) levam às páginas próprias do blog */
+      if (h === "conteudos" || h === "previa" || h === "previa-off"){ location.replace("/blog/"); return; }
+      if (h.startsWith("post-")){ location.replace("/blog/" + h.slice(5) + "/"); return; }
+    }
+    if (STATIC && INITIAL_ROUTE && location.hash && !h.startsWith("post-") && h !== "conteudos"){ location.replace("/#" + h); return; }
+    const isBlog = h === "conteudos" || h.startsWith("post-");
     setMenu(false);
     root.classList.toggle("force-solid", isBlog || (h && h !== "inicio"));
     if (isBlog){
       main.hidden = true; blog.hidden = false;
       const p = POSTS_.find(x => "post-" + x.slug === h);
       blogIndex.hidden = !!p; blogPost.hidden = !p;
-      if (p) { renderPost(p); document.title = p.title + " · Henrique Carmelo"; }
-      else { renderList(); document.title = "Conteúdos · Henrique Carmelo"; }
+      if (p) { renderPost(p); document.title = p.title + " | Dr. Henrique Carmelo"; }
+      else if (h.startsWith("post-") && STATIC){ location.replace("/blog/"); return; }
+      else { renderList(); document.title = "Conteúdos sobre saúde | Dr. Henrique Carmelo"; }
       toTop();
       markNav("conteudos");
     } else {
@@ -1565,8 +1306,8 @@ const MSG = "Olá! Gostaria de agendar uma consulta com o Dr. Henrique Carmelo."
       pageEls.forEach(p => { p.hidden = p !== pg; });
       root.classList.toggle("force-solid", pg !== pageEls[0]);
       markNav(pg.dataset.page);
-      const names = {inicio:"", sobre:"Sobre", consulta:"A consulta", duvidas:"Dúvidas", contato:"Contato"};
-      document.title = names[pg.dataset.page] ? names[pg.dataset.page] + " · Henrique Carmelo" : "Henrique Carmelo";
+      const names = {inicio:"", sobre:"Sobre", consulta:"A consulta", duvidas:"Dúvidas", contato:"Contato", privacidade:"Política de privacidade", "nao-encontrada":"Página não encontrada"};
+      document.title = names[pg.dataset.page] ? names[pg.dataset.page] + " | Dr. Henrique Carmelo" : "Dr. Henrique Carmelo | Teleconsulta médica e informações sobre saúde";
       if (changed){
         toTop();
         pg.classList.remove("enter"); void pg.offsetWidth; pg.classList.add("enter");
