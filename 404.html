@@ -792,7 +792,7 @@ footer .priv{flex-basis:100%;font-size:12px;opacity:.8;max-width:70em}
         <details><summary>Preciso parar o tratamento que já faço?</summary><p>Não. Nenhuma medicação deve ser interrompida por conta própria. A consulta revisa o que você já usa e, se algum ajuste for necessário, ele é feito com segurança e explicado passo a passo. A consulta também pode complementar o acompanhamento com o seu médico atual.</p></details>
         <details><summary>Como funciona a consulta on-line?</summary><p>Depois de agendar, você recebe pelo WhatsApp o link da consulta e as orientações. No horário marcado, é só entrar pelo celular ou pelo computador, de um lugar reservado e com boa conexão. A teleconsulta é regulamentada pelo Conselho Federal de Medicina, depende do seu consentimento e segue as mesmas regras de sigilo e registro de uma consulta presencial. Em alguns casos, pode ser necessária avaliação presencial.</p></details>
         <details><summary>Recebo receita e pedido de exames pela consulta on-line?</summary><p>Sim, quando houver indicação. Receitas, pedidos de exame, atestados e relatórios são emitidos em formato digital, com assinatura eletrônica certificada, e enviados para você. Alguns medicamentos de controle especial seguem regras próprias de receituário, que são explicadas na consulta.</p></details>
-        <details><summary>E se o meu caso precisar de exame físico?</summary><p>Isso é avaliado durante a consulta. Se for necessário um exame presencial, você recebe a orientação sobre o melhor caminho para fazê-lo. No acompanhamento de doenças crônicas ou de condições que exigem seguimento prolongado, as normas do Conselho Federal de Medicina preveem também uma consulta presencial em intervalos de até 180 dias; quando isso se aplica ao seu caso, você é orientado sobre como fazê-la.</p></details>
+        <details><summary>E se o meu caso precisar de exame físico?</summary><p>Isso é avaliado durante a consulta. Em algumas situações, o exame físico ou uma consulta presencial é necessário. Para doenças crônicas ou acompanhamentos prolongados, a regulamentação também exige consultas presenciais periódicas, com intervalos de até 180 dias. Quando essa exigência se aplicar ao seu caso, você receberá orientações sobre o acompanhamento adequado.</p></details>
         <details><summary>O que é bom ter em mãos durante a consulta?</summary><p>Exames recentes, receitas e a lista de tudo o que você usa, incluindo chás, suplementos e produtos naturais. Anotar quando os sintomas começaram e o que já foi tentado também ajuda muito.</p></details>
         <details><summary>Como agendar e quais são os valores?</summary><p>Pelo WhatsApp. Lá você conhece os horários disponíveis e os valores. Na mensagem inicial não é preciso contar sintomas nem enviar exames: essas informações são tratadas na consulta.</p></details>
       </div>
@@ -942,6 +942,7 @@ const POSTS = [
 },
 {
   slug:"consulta-online",
+  updated:"2026-11-20",
   photo:{src:"https://images.unsplash.com/photo-1758691462743-f9fc9e430d39?w=1400&h=735&fit=crop&crop=entropy&q=75&auto=format",credit:"Vitaly Gariev / Unsplash",alt:"Médico em consulta por vídeo pelo computador"},
   cat:"Consulta",
   date:"2026-11-08",
@@ -970,18 +971,19 @@ const POSTS = [
 <div class="note"><b>E se for preciso examinar?</b> Se o médico entender que o seu caso pede exame físico presencial, isso é explicado durante a consulta, com orientação sobre o melhor caminho.</div>`,
   refs:[
     "Conselho Federal de Medicina. Resolução CFM nº 2.314/2022. Define e regulamenta a telemedicina como forma de serviços médicos mediados por tecnologias de comunicação.",
-    "Conselho Federal de Medicina. Resolução CFM nº 2.314/2022, art. 6º: em doenças crônicas ou que exijam acompanhamento prolongado, recomenda-se consulta presencial em intervalos não superiores a 180 dias.",
+    "Conselho Federal de Medicina. Resolução CFM nº 2.314/2022. Conforme o art. 6º, § 2º, da Resolução CFM nº 2.314/2022, nos atendimentos de doenças crônicas ou que exijam acompanhamento por longo tempo, deve ser realizada consulta presencial com o médico assistente do paciente em intervalos não superiores a 180 dias.",
     "Brasil. Lei nº 14.510, de 27 de dezembro de 2022. Autoriza e disciplina a prática da telessaúde em todo o território nacional."
   ]
 },
 {
   slug:"perguntas-para-a-consulta",
+  updated:"2026-11-20",
   photo:{src:"https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?w=1400&h=735&fit=crop&crop=entropy&q=75&auto=format",credit:"Hannah Olinger / Unsplash",alt:"Mão escrevendo anotações em um caderno"},
   cat:"Consulta",
   date:"2026-11-08",
   cover:"perguntas",
   title:"Cinco perguntas que vale a pena levar a qualquer consulta",
-  summary:"Sair do consultório com dúvidas é mais comum do que parece. Estas perguntas ajudam a entender o diagnóstico, as opções e o que esperar do tratamento.",
+  summary:"Terminar uma consulta com dúvidas é mais comum do que parece. Estas perguntas ajudam a entender o diagnóstico, as opções e o que esperar do tratamento.",
   body:`
 <p>Uma consulta tem tempo limitado, e é natural esquecer o que queria perguntar. Ter algumas perguntas preparadas ajuda você a participar das decisões sobre a sua saúde. Elas valem para qualquer médico e qualquer especialidade.</p>
 <h2>1. Qual pode ser a causa?</h2>
